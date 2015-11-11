@@ -11,7 +11,8 @@ This application is owned by charder electronics corporation.(http://charder.com
 
 
 ```
-    Maurice Sun  
+    Maurice Sun,
+    Peace Pan  
 ```
 
 ## Necessary Module Installation
