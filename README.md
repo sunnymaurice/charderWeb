@@ -12,6 +12,7 @@ This application is owned by charder electronics corporation.(http://charder.com
 
 ```
     Maurice Sun  
+	Daisy Yu
 ```
 
 ## Necessary Module Installation
