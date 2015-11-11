@@ -10,10 +10,9 @@ This application is owned by charder electronics corporation.(http://charder.com
 ## Contributors
 
 
-```
     Maurice Sun,
-    Peace Pan  
-```
+	Daisy Yu,
+    Peace Pan
 
 ## Necessary Module Installation
 
