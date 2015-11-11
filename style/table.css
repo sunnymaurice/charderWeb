@@ -1,0 +1,95 @@
+.DisplayHeader table  th {
+	font-size: 1.4rem;
+	/* border: 1px solid; */
+}
+
+.DisplayData table  td {
+	padding: 10px;
+	/* font-weight: bold; */
+	font-size: 1.3rem;
+	text-align: center;
+/* 	border: 1px solid; */
+}
+
+table {
+	border-spacing: 0px;
+	width: 100%;	
+}
+/* Device SN */
+.DisplayHeader table  th:nth-child(1){
+	width: 11%;
+}
+/* User ID */
+.DisplayHeader table  th:nth-child(2){
+	width: 20%;
+}
+/* Gross/Tare/Net Weight & Height */
+.DisplayHeader table  th:nth-child(n+3):nth-child(-n+6){
+	width: 11%;
+}
+/* BMI */
+.DisplayHeader table  th:nth-child(7){
+	width: 5%;
+}
+/* Date */
+.DisplayHeader table  th:nth-child(8){
+	width: 20%;
+}
+/* Time */
+/*
+.DisplayHeader table  th:nth-child(9){
+	width: 13%;
+}
+*/
+
+.DisplayData table  td:nth-child(1){
+	width: 11%;
+}
+.DisplayData table  td:nth-child(2){
+	width: 20%;
+}
+.DisplayData table  td:nth-child(n+3):nth-child(-n+6){
+	width: 11%;
+}
+.DisplayData table  td:nth-child(7){
+	width: 5%;
+}
+.DisplayData table  td:nth-child(8){
+	width: 20%;
+}
+/*
+.DisplayData table  td:nth-child(9){
+	width: 13%;
+}
+*/
+/* Adjust the display width % when the content is overflowed with a scroll bar in the right side. */
+
+.has-overflow  th, td{
+	font-size: 1.3rem !important;
+}
+.has-overflow  {
+	width: 98.8% !important;
+}
+/* .overflow  th:nth-child(1){
+	width: 8% !important;
+}
+.overflow  th:nth-child(2){
+	width: 17% !important;
+} */
+/* Gross/Tare/Net Weight & Height */
+/* .overflow  th:nth-child(n+3):nth-child(-n+6){
+	width: 13% !important;
+}
+.has-overflow  th:nth-child(7) {
+	width: 6% !important;
+}
+.has-overflow  th:nth-child(8){
+	width: 25% !important;
+	
+} */
+
+/*
+.has-overflow  th:nth-child(9) {
+	width: 18% !important;
+}
+*/

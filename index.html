@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width">
+		
+		<link rel="stylesheet" type="text/css" href="style/table.css">
+		<link rel="stylesheet" type="text/css" href="style/page.css">
+		<link rel="stylesheet" type="text/css" href="style/media query.css">
+		<title>WiFi Health Device Database</title>			
+		<script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="script/browser_detector.js"></script>	
+		<script type="text/javascript" src="script/datePicker.js"></script>			
+		<script type="text/javascript" src="script/exportDataAsCsv.js"></script>	
+		<script type="text/javascript" src="script/handlePhpResp.js"></script>
+		<script type="text/javascript" src="script/refreshData.js"></script>		
+	</head>
+	<!-- Do bodyInit while onload and refress every timout interval in refreshData.js by Maurice Sun. -->
+	<!--<body onload="handle_php_resp.bodyInit()">-->
+	<body>	
+		<article>
+			<div id="Header">
+				<div id="h1">WiFi Health Device Database v1.1</div>	
+			</div>
+			<div id="Main-Container">
+				<div id="QueryFactor"> 									
+					<form id="SqlQueryForm" method="post" enctype="multipart/form-data">
+						<div id="QueryFactor">
+							<label class="UserID">
+								User ID:&nbsp;	
+								<select required id="id_list" name="id_list">	
+								</select>
+							</label>  						
+							<label class="Date">
+								measured at date:&nbsp;							
+								<input type="text" id="measure_date" name="measure_date" value="" onclick="calendar.setHook(this)">
+								</select>
+							</label>
+							<label class="DeviceID">
+								from Device ID:&nbsp;	
+								<select id="dev_list" name="dev_list">								
+								</select>
+							</label>  						
+
+							<label class="SubmitAction">
+								<!--
+								<button id="submit_query_form" name="submitQueryForm" onclick="handle_php_resp.queryformSubmit()">Start Query</button> -->
+
+								<input type="button" id="submit_query_form" name="submitQueryForm" value="Start Query" onclick="handle_php_resp.queryformSubmit()">	
+								
+							</label>
+							<label class="SaveAsFileAction">
+								<br>
+								Save search result:&nbsp;
+								<input type="button" id="save_query_result" name="save_query_result" value="Save CSV" onclick="handle_php_resp.saveQueryResultSubmit()">	
+							</label>
+						</div>  					
+					</form>							
+				</div>			
+				<div class="container">
+					<div class="DisplayHeader">	</div>
+					<div class="DisplayData">
+						<!--<p> This is the div block to display selected data from mysql DB!</p>-->
+					</div> 			
+					<!-- <div class="debug_prompt" align="center">
+						<p><b>Results:</b> <span id="results"></span></p>
+					</div> -->	
+					<br>
+				</div>
+			</div>
+			<div id="Footer">
+				<p>No. 103, Guozhong Rd., Dali Dist., Taichung City 412 Taiwan(R.O.C)&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;font-weight:bold">Phone /</span> +886-4-2406-3766&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;font-weight:bold;">Fax /</span>  +886-4-2406-5612&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;font-weight:bold"> E-mail /</span><a href="mailto:info_cec@charder.com.tw" style="color:black; text-decoration:none"> info_cec@charder.com.tw</a></p>
+				<p>2015 © Charder Electronic Co, Ltd. All rights reserved.</p>
+			</div>	
+		</article>			
+	</body>	
+</html>
+

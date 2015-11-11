@@ -1,0 +1,117 @@
+html {
+	min-width: 640px;
+}
+
+html, body { 
+	font-size: 16px;
+	margin: 0;
+	height: 79%;
+}
+
+article {
+    position: relative;
+    height: 100%;
+}
+
+ /* 淡化背景顏色 */
+body:before {
+	content: "";
+	position: absolute;
+	left: 0; top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/bg.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	/* The major parameter to specifi the background transparency */
+	opacity: 0.2;
+}
+
+button, input[type="button"]{
+	font-size: 1.2rem;
+}
+
+input[type="text"], select{
+	width: 12rem;
+	font-size: 1.2rem;
+	padding: 0;
+}
+
+#Header{
+	width: 99%;
+	text-align: left;
+	font-weight: bold;
+	font-size: 2.5rem;
+	color: #000079;
+	font-style: italic;
+	position: fixed;
+	/* top: 5%;  */
+	left: 0.5%;
+	height: 15%;
+	z-index: 5;
+	
+}
+
+#h1::first-letter {
+	font: 600 300% "Arial";
+	vertical-align: -2%;
+}
+
+#Main-Container{
+	position: absolute;
+	height: 96%;
+	width: 100%;
+	top: 30%;	
+}
+
+#Main-Container *{
+	position: relative;	
+}
+
+#QueryFactor{
+	width: 99%;
+	margin: 1% auto 1.5%;
+	font-size: 1.5rem;
+	z-index: 10;
+
+}
+
+.container{
+	height: 100%;
+	width: 99%;
+	padding: 0;
+	margin: auto;
+	background-color: rgba(0, 115, 230, 0.3);
+}
+
+.DisplayHeader {	
+	min-height: 10%;
+	width: 100%;
+}
+
+.DisplayData {	
+	min-height: 80%;	
+	height: 80%;
+	width: 100%;
+	overflow: auto;
+}
+
+.debug_prompt {		
+	top:141px;
+	font-size: 10px;
+	height: 100%;	
+}	
+
+#Footer {
+	position: fixed;
+	padding: 0 0 0 0;
+	bottom: 0; left: 0.5%;
+	text-align: center;
+	width: 99%;
+	height: 10%;
+	line-height: 10px;
+	font-size: 1rem;
+	font-weight: bold;
+	background-color: rgba(249, 202, 31, 0.8);
+	color: black;
+}
