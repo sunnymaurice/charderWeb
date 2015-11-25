@@ -1,0 +1,28 @@
+$footer-bg-color: rgba(249, 202, 31, 0.8);
+$footer-font-size: 1em;
+
+.page-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 0;
+
+	font-size: $footer-font-size;
+	font-weight: bold;
+	text-align: center;
+	line-height: normal;
+
+	background-color: $footer-bg-color;
+	color: black;
+	z-index: 10;
+
+	span {
+		color: blue;
+		font-weight: bold;
+	}
+
+	a {
+		color: black;
+		text-decoration: none;
+	}
+}
