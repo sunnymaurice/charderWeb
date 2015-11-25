@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.DisplayHeader {
+	font-size: 1vw;
+	height: 7%;
+	width: 100%;
+	background-color: $table-bg-color;
+	/* margin: 0 auto; */
+
+	table th {
+		border: 1px;
+		padding: 10px;
+		font-weight: bold;
+		font-size: 15px;
+		text-align: center;
+	}
+}
+
+.DisplayData {
+	font-size: 1vw;
+	height: 53%;	
+	width: 100%;
+	background-color: $table-bg-color;
+	/* margin: 0 auto; */
+	overflow: auto;
+
+	table {
+		th {
+			border: 1px;
+			padding: 10px;
+			font-weight: bold;
+			font-size: 20px;
+			text-align: center;
+		}
+		td {
+			border: 1px;
+			padding: 10px;
+			font-size: 15px;
+			text-align: center;
+		}
+	}
+}
+

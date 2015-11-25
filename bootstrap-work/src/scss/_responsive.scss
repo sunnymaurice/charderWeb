@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+// 如果使用者之視窗寬度 >= 1200px，將會再載入這裡的 CSS
+@media screen and (min-width: 1200px) {
+	.displayData table  th {
+		font-size: 25px;
+	}
+	.displayData table  td {
+		font-size: 20px;
+	}
+}
+
+// 如果使用者之視窗寬度介於 768px ~ 979px，將會再載入這裡的 CSS
+@media screen and (min-width: 768px) and (max-width: 979px) {
+	.displayData table  th {
+		font-size: 15px;
+	}
+	.displayData table  td {
+		font-size: 10px;
+	}
+}
+
+//  如果使用者之視窗寬度 <= 768px，將會再載入這裡的 CSS
+@media screen and (max-width: 767px) {
+   
+}
+
+// 如果使用者之裝置寬度 <= 480px，將會再載入這裡的 CSS
+@media screen and (max-device-width: 480px) {
+
+}
